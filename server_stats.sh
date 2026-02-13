@@ -16,8 +16,8 @@ echo ""
 echo TOP PROCESS MEM USAGE:
 echo "$(top -b -n 1 -o %MEM | sed -n '8,12p' | awk '{printf "Process ID:"$1 "\t" "Process command: " $12 "\t\t" "CPU usage: " $9"%" "\t\t" "MEM usage: " $10"%" "\n"}')"
 echo ""
-echo "UPTIME:"
+echo UPTIME:
 echo "$(uptime)"
 echo ""
-echo "OS VERSION"
+echo OS VERSION:
 echo "$(uname -a)"
